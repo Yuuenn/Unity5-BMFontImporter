@@ -122,7 +122,9 @@ Unity Editor 上で利用可能な、カスタム Unity Default Font のビッ�
 ## テストフォント、暫定ゲームの構築とフォントのエクスポート
 ### 成果物
 Export Dump 方法でエクスポートされた新しいフォントの Font および Texture 2D のテキストファイル。
+
 ### 手順
+
 #### 1. Text 内の文字位置の確認
 1. Hierarchy パネルで作成済みの Text オブジェクトを選択し、Inspector の Text コンポーネントで表示される文字が灰色の境界（Rect Transform）内に収まり、垂直方向に中央揃えになっているか確認する。
 2. もし文字全体が高すぎる場合は、.fnt ファイル内の `base=` の値を小さく、低すぎる場合は大きく調整する。
@@ -264,6 +266,7 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
 ## Testing the Font, Building a Temporary Game, and Exporting the Font
 ### Final Product
 Font and Texture 2D text files of the new font exported via the Export Dump method.
+
 ### Steps
 #### 1. Check the Text Position in the Text Object
 1. In the Hierarchy panel, select the created Text object and verify in the Inspector that the text displayed by the Text component is contained within the gray boundary (Rect Transform) and is vertically centered.
@@ -404,7 +407,9 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
 ## 测试字体、构建临时游戏并导出字体
 ### 获得成品
 通过 Export Dump 方式导出的新字体的Font 和 Texture 2D 文本文件。
-###　步骤
+
+### 步骤
+
 ### 1. 检查文字在 Text 中的位置
 1. 在 Hierarchy 面板中选中已创建的 Text 对象，检查 Inspector 中 Text 组件显示的文本是否位于灰色边界框（Rect Transform）内，并且垂直居中。
 2. 如果发现字符整体位置偏高，则尝试在 .fnt 文件中减小 `base=` 值；如果偏低，则需要增大该值。
