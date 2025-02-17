@@ -195,7 +195,7 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
    The script will parse the .fnt file and populate the CustomFont’s Character Rects with the character data.
 2. If the test string appears in the Scene view with the new font, the import is successful.
 
-*If you plan to replace the font in a published game (such as for third-party localization work), please continue reading the "Replacing Fonts in a Published Game / Testing the Font, Building a Temporary Game, and Exporting the Font" section below.*
+*If you plan to replace the font in a published game (such as for third-party localization work), please continue reading the "Replacing Fonts in Released Games / Testing the Font, Building a Temporary Game, and Exporting the Font" section below.*
 
 ## Replacing Fonts in Released Games
 
@@ -257,7 +257,7 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
 8. **Baseline Adjustment**  
    To ensure correct display, manually adjust the baseline. Open the .fnt file in a text editor and change the value following `base=` to an integer, then save.  
    > In my experience, an appropriate base value is roughly the lineHeight multiplied by 0.2 (rounded).
-9. After these steps, you will have the necessary font texture and .fnt configuration files. Please continue reading the "Required Preparations" section above and proceed with the subsequent steps.
+9. After these steps, you will have the necessary font texture and .fnt configuration files. Please continue reading the "Requirements" section above and proceed with the subsequent steps.
 
 ## Testing the Font, Building a Temporary Game, and Exporting the Font
 
