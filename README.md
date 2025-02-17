@@ -120,22 +120,24 @@ Unity Editor 上で利用可能な、カスタム Unity Default Font のビッ�
 9. 上記の手順で、必要なフォントテクスチャと .fnt 設定ファイルが生成されます。次の工程に進む前に、本プロジェクトの上記「必要な準備物」の内容から確認してください。
 
 ## テストフォント、暫定ゲームの構築とフォントのエクスポート
-
-### 1. Text 内の文字位置の確認
+### 成果物
+Export Dump 方法でエクスポートされた新しいフォントの Font および Texture 2D のテキストファイル。
+### 手順
+#### 1. Text 内の文字位置の確認
 1. Hierarchy パネルで作成済みの Text オブジェクトを選択し、Inspector の Text コンポーネントで表示される文字が灰色の境界（Rect Transform）内に収まり、垂直方向に中央揃えになっているか確認する。
 2. もし文字全体が高すぎる場合は、.fnt ファイル内の `base=` の値を小さく、低すぎる場合は大きく調整する。
 3. より正確に調整するため、Scene パネルを拡大して必要なオフセット量を測定・記録し、適宜修正する。
 
-### 2. プロジェクトの保存と暫定ゲームのビルド
+#### 2. プロジェクトの保存と暫定ゲームのビルド
 1. Ctrl+S またはメニューバーの **File → Save Project** でプロジェクトを保存し、すべての変更が反映されていることを確認する。
 2. メニューバーの **File → Build Settings** を開き、ターゲットプラットフォーム（例：PC、Mac & Linux Standalone）を選択する。
 3. 「Add Open Scenes」をクリックして、現在のシーンをビルドリストに追加する。
 4. 「Build」ボタンをクリックし、保存先を指定して暫定ゲームをビルドする。
 
-### 3. 作成したフォントのエクスポート
+#### 3. 作成したフォントのエクスポート
 1. ビルドされた暫定ゲームの `GameName_Data` フォルダを開く。
 2. UABEAvalonia などのツールを使用して、暫定ゲーム内の `resources.assets` ファイルを開く。
-3. Export Dump 方式を用いて、新しく作成されたフォントの Font と Texture のテキストファイルをエクスポートする（元のフォントと混同しないよう注意する）。
+3. Export Dump 方式を用いて、新しく作成されたフォントの Font と Texture 2D のテキストファイルをエクスポートする（元のフォントと混同しないよう注意する）。
 
 ---
 
@@ -260,22 +262,24 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
 9. After these steps, you will have the necessary font texture and .fnt configuration files. Please continue reading the "Requirements" section above and proceed with the subsequent steps.
 
 ## Testing the Font, Building a Temporary Game, and Exporting the Font
-
-### 1. Check the Text Position in the Text Object
+### Final Product
+Font and Texture 2D text files of the new font exported via the Export Dump method.
+### Steps
+#### 1. Check the Text Position in the Text Object
 1. In the Hierarchy panel, select the created Text object and verify in the Inspector that the text displayed by the Text component is contained within the gray boundary (Rect Transform) and is vertically centered.
 2. If the characters appear too high, try reducing the `base=` value in the .fnt file; if they appear too low, increase it accordingly.
 3. For precise adjustment, zoom in on the Scene view to measure and record the required offset, then adjust as needed.
 
-### 2. Save the Project and Build a Temporary Game
+#### 2. Save the Project and Build a Temporary Game
 1. First, save the project by pressing Ctrl+S or selecting **File → Save Project** from the menu to ensure all changes are saved.
 2. Open **File → Build Settings** from the menu and select your target platform (e.g., PC, Mac & Linux Standalone).
 3. Click **Add Open Scenes** to add the current scene to the build list.
 4. Finally, click the **Build** button, choose a save location, and build the temporary game.
 
-### 3. Export the Created Font
+#### 3. Export the Created Font
 1. Open the `GameName_Data` folder of the built temporary game.
 2. Using tools such as UABEAvalonia, open the `resources.assets` file of the temporary game.
-3. Export the Font and Texture text files of the newly created font using the Export Dump method (be careful not to confuse them with the original font).
+3. Export the Font and Texture 2D text files of the newly created font using the Export Dump method (be careful not to confuse them with the original font).
 
 ---
 
@@ -398,7 +402,9 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
 9. 完成上述步骤后，您将获得所需的字体纹理文件和 .fnt 字体配置文件，请继续阅读上方的“需要准备的内容”部分，进行后续操作。
 
 ## 测试字体、构建临时游戏并导出字体
-
+### 获得成品
+通过 Export Dump 方式导出的新字体的Font 和 Texture 2D 文本文件。
+###　步骤
 ### 1. 检查文字在 Text 中的位置
 1. 在 Hierarchy 面板中选中已创建的 Text 对象，检查 Inspector 中 Text 组件显示的文本是否位于灰色边界框（Rect Transform）内，并且垂直居中。
 2. 如果发现字符整体位置偏高，则尝试在 .fnt 文件中减小 `base=` 值；如果偏低，则需要增大该值。
@@ -413,4 +419,4 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
 ### 3. 导出创建的字体
 1. 打开构建好的临时游戏的 `GameName_Data` 文件夹。
 2. 使用 UABEAvalonia 等工具打开临时游戏中的 `resources.assets` 文件。
-3. 以 Export Dump 方式导出新创建的字体的 Font 和 Texture 文本文件（注意不要与原有字体混淆）。
+3. 以 Export Dump 方式导出新创建的字体的 Font 和 Texture 2D 文本文件（注意不要与原有字体混淆）。
