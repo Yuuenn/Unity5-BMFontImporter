@@ -55,6 +55,7 @@ Unity Editor 上で利用可能な、カスタム Unity Default Font のビッ�
    スクリプトが .fnt ファイルを解析し、文字データを CustomFont の Character Rects に設定する。
 2. Scene ビューにテスト文字列が新フォントで表示されれば、インポート成功です。
 
+**※すでにリリース済みのゲームのフォントを置き換える予定がある場合（第三者によるローカライズ作業など）、以下の「リリース済みゲームのフォントの置き換え／テストフォント、暫定ゲームの構築とフォントのエクスポート」セクションを続けてお読みください。**
 
 ## 既にリリース済みゲームのフォント置換
 
@@ -116,7 +117,7 @@ Unity Editor 上で利用可能な、カスタム Unity Default Font のビッ�
 8. **基線補正**  
    正しい表示を実現するため、生成された .fnt ファイルをテキストエディタで開き、`base=` の値を整数に修正して保存する。  
    > 私の経験では、適切な base 値は lineHeight の約 0.2 倍（四捨五入した値）が目安です。
-9. 上記の手順で、必要なフォントテクスチャと .fnt 設定ファイルが生成されます。次の工程に進む前に、「必要な準備物」の内容を再確認してください。
+9. 上記の手順で、必要なフォントテクスチャと .fnt 設定ファイルが生成されます。次の工程に進む前に、本プロジェクトの上記「必要な準備物」の内容から確認してください。
 
 ## テストフォント、暫定ゲームの構築とフォントのエクスポート
 
@@ -194,6 +195,8 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
    The script will parse the .fnt file and populate the CustomFont’s Character Rects with the character data.
 2. If the test string appears in the Scene view with the new font, the import is successful.
 
+*If you plan to replace the font in a published game (such as for third-party localization work), please continue reading the "Replacing Fonts in a Published Game / Testing the Font, Building a Temporary Game, and Exporting the Font" section below.*
+
 ## Replacing Fonts in Released Games
 
 > This section is intended for situations where:
@@ -254,7 +257,7 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
 8. **Baseline Adjustment**  
    To ensure correct display, manually adjust the baseline. Open the .fnt file in a text editor and change the value following `base=` to an integer, then save.  
    > In my experience, an appropriate base value is roughly the lineHeight multiplied by 0.2 (rounded).
-9. After these steps, you will have the necessary font texture and .fnt configuration files. Please review the “Required Materials” section above before proceeding further.
+9. After these steps, you will have the necessary font texture and .fnt configuration files. Please continue reading the "Required Preparations" section above and proceed with the subsequent steps.
 
 ## Testing the Font, Building a Temporary Game, and Exporting the Font
 
@@ -330,6 +333,8 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
 ### 3. 应用脚本
 1. 使用 Ctrl+P 快捷键或点击播放按钮运行场景。脚本将解析 .fnt 文件，并将字符数据填入 CustomFont 的 Character Rects 字段。
 2. 若 Scene 面板中以新字体显示测试字符串，则说明导入成功。
+
+***如果您计划替换已发布游戏中的字体（如进行第三方本地化工作），请继续阅读下方“替换已经发布的游戏中的字体/测试字体、构建临时游戏并导出字体”部分。***
 
 ## 替换已经发布的游戏中的字体
 
