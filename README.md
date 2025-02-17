@@ -409,19 +409,18 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
 通过 Export Dump 方式导出的新字体的Font 和 Texture 2D 文本文件。
 
 ### 步骤
-
-### 1. 检查文字在 Text 中的位置
+#### 1. 检查文字在 Text 中的位置
 1. 在 Hierarchy 面板中选中已创建的 Text 对象，检查 Inspector 中 Text 组件显示的文本是否位于灰色边界框（Rect Transform）内，并且垂直居中。
 2. 如果发现字符整体位置偏高，则尝试在 .fnt 文件中减小 `base=` 值；如果偏低，则需要增大该值。
 3. 为了更精确地调整，您可以放大 Scene 面板的视野，仔细测量并记录所需偏移量，然后进行相应调整。
 
-### 2. 保存项目并构建临时游戏
+#### 2. 保存项目并构建临时游戏
 1. 首先，通过 Ctrl+S 或菜单栏 **File → Save Project** 保存当前项目，确保所有修改均已存盘。
 2. 然后，打开菜单栏中的 **File → Build Settings**，选择目标平台（例如 PC、Mac & Linux Standalone）。
 3. 点击 “Add Open Scenes” 将当前场景添加到 Build 列表中。
 4. 最后，点击 “Build” 按钮，选择一个保存路径，构建临时游戏。
 
-### 3. 导出创建的字体
+#### 3. 导出创建的字体
 1. 打开构建好的临时游戏的 `GameName_Data` 文件夹。
 2. 使用 UABEAvalonia 等工具打开临时游戏中的 `resources.assets` 文件。
 3. 以 Export Dump 方式导出新创建的字体的 Font 和 Texture 2D 文本文件（注意不要与原有字体混淆）。
