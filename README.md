@@ -79,14 +79,14 @@ Unity Editor 上で利用可能な、カスタム Unity Default Font のビッ�
    - 黒字＋透明背景
 4. [UABEAvalonia](https://github.com/nesrak1/UABEA) 等のツールで、元フォントの Font と Texture のテキストファイルを Export Dump 方式で出力（複数フォントの場合は、フォント名ごとにフォルダ分け推奨）。
 5. [Bitmap Font Generator](https://www.angelcode.com/products/bmfont/) をダウンロード。
-6. リポジトリ内の Unity5.6_CustomFont.bmfc 設定ファイルをダウンロード。
+6. リポジトリ内の CustomFontConfig.bmfc 設定ファイルをダウンロード。
 7. （任意）生成するフォントを TrueType フォントの一部の文字（例：頻出漢字）のみにする場合、対象文字を含むテキストファイル（UTF-8 BOM または UTF-16 BOM 形式）を用意。
 
 ### 手順
 1. **フォントファイルのインストール**  
    対象の TrueType フォントをシステムにインストールする。複数のウェイトが存在する場合、必要なウェイトのみ残し、他は一時的にアンインストールして Bitmap Font Generator が正しく認識できるようにする。
 2. **設定の読み込み**  
-   Bitmap Font Generator を起動し、**Options → Load Configuration** を選択して Unity5.6_CustomFont.bmfc を読み込む。
+   Bitmap Font Generator を起動し、**Options → Load Configuration** を選択して CustomFontConfig.bmfc を読み込む。
 3. **フォントパラメータの設定**  
    **Options → Font Settings** をクリックし、以下を確認・調整：
    - **Font**：対象フォントに変更
@@ -223,14 +223,14 @@ A custom Unity Default Font bitmap font that can be used in the Unity Editor.
    - Black text with transparent background
 4. Use tools like [UABEAvalonia](https://github.com/nesrak1/UABEA) to export the original font’s Font and Texture text files via Export Dump (if exporting multiple fonts, store them in separate folders named by font to avoid confusion).
 5. Download the Bitmap Font Generator from [here](https://www.angelcode.com/products/bmfont/).
-6. Download the Unity5.6_CustomFont.bmfc configuration file from the repository.
+6. Download the CustomFontConfig.bmfc configuration file from the repository.
 7. (Optional) If you wish to generate a font that includes only a subset of characters from the TrueType file (e.g., common Chinese characters), prepare a text file containing those characters (encoded in UTF-8 BOM or UTF-16 BOM).
 
 ### Steps
 1. **Install the Font File**  
    Install the target TrueType font on your computer. If multiple weights exist, temporarily uninstall those not needed so that Bitmap Font Generator can correctly identify the target weight.
 2. **Load Configuration**  
-   Open Bitmap Font Generator, then go to **Options → Load Configuration** and select Unity5.6_CustomFont.bmfc to import the configuration.
+   Open Bitmap Font Generator, then go to **Options → Load Configuration** and select CustomFontConfig.bmfc to import the configuration.
 3. **Set Font Parameters**  
    Click **Options → Font Settings** and adjust the following:
    - **Font:** Change to the target font.
@@ -365,14 +365,14 @@ BMFontImporter.cs 是一个用于从 AngelCode BMFont 格式的 .fnt 文件中�
    - 黑字＋透明背景
 4. 通过 [UABEAvalonia](https://github.com/nesrak1/UABEA) 等工具，以 Export Dump 方式导出原字体的 Font 与 Texture 文本文件（若导出多个字体，建议按字体名称分别存放于不同文件夹中）。
 5. 下载位图字体制作工具 [Bitmap Font Generator](https://www.angelcode.com/products/bmfont/) 至本地。
-6. 下载仓库中的 Unity5.6_CustomFont.bmfc 配置文件至本地。
+6. 下载仓库中的 CustomFontConfig.bmfc 配置文件至本地。
 7. （可选）若您希望生成的字体仅包含 TrueType 字体文件中的部分字符（例如常用汉字），请准备包含这些字符的文本文件（要求以 UTF-8 BOM 或 UTF-16 BOM 格式编码）。
 
 ### 步骤
 1. **安装字体文件**  
    将目标 TrueType 字体文件安装到您的计算机上。若系统中存在多个字重，请暂时卸载不需要的版本，仅保留目标字重，以确保 Bitmap Font Generator 能正确识别目标字体。
 2. **加载配置**  
-   打开 Bitmap Font Generator，依次点击 **Options → Load Configuration**，选择 Unity5.6_CustomFont.bmfc 导入配置文件。
+   打开 Bitmap Font Generator，依次点击 **Options → Load Configuration**，选择 CustomFontConfig.bmfc 导入配置文件。
 3. **设置字体参数**  
    点击 **Options → Font Settings**，确认并调整以下设置：
    - **Font** → 更换为目标字体  
